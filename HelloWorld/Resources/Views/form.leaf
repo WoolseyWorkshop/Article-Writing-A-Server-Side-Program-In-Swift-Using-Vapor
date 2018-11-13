@@ -1,0 +1,15 @@
+#set("title") { Form Page }
+
+#set("body") {
+<h1>Form Page</h1>
+<hr>
+<form method="post" action="/send">
+<p>Name: <input type="text" name="name" /></p>
+<p><textarea name="message" rows="4" cols="30" placeholder="Your message"></textarea></p>
+<p><input type="submit" /></p>
+</form>
+<hr>
+#(response)
+}
+
+#embed("base")
